@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* font-family: 'Red Hat Display', sans-serif; */
+      .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        background-color: hsl(225, 100%, 94%);
+        font-family: "Red Hat Display", sans-serif;
+      }
+
+      div.wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 327px;
+        height: 567px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        text-align: center;
+      }
+
+      img.hero {
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+        font-weight: 900;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        color: hsl(223, 47%, 23%);
+      }
+
+      p {
+        padding: 0 40px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        color: hsl(224, 23%, 55%);
+      }
+
+      div.plan {
+        display: flex;
+        align-items: center;
+        width: 279px;
+        height: 81px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        padding: 0 15px;
+        border-radius: 13px;
+        background-color: #f8f9fe;
+      }
+
+      div.price {
+        width: 81px;
+        height: 40px;
+        line-height: 23px;
+        font-size: 14px;
+        margin-bottom: 7px;
+        margin-left: 17px;
+      }
+
+      span.annual {
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+      }
+
+      span.change {
+        margin-left: 55px;
+        font-size: 13px;
+        font-weight: 700;
+        text-decoration: underline;
+        color: #4134c1;
+      }
+
+      span.change:hover {
+        cursor: pointer;
+      }
+
+      span.yearly {
+        color: hsl(224, 23%, 55%);
+      }
+
+      div.button {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 279px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 10px;
+        background-color: #372be1;
+        font-size: 15px;
+        font-weight: 600;
+        color: hsl(225, 100%, 98%);
+        box-shadow: 1px 16px 30px rgb(181, 181, 237);
+      }
+
+      div.button:hover {
+        cursor: pointer;
+      }
+
+      span.order {
+        font-size: 15px;
+        font-weight: 900;
+        color: #372be1;
+      }
+
+      span.order:hover {
+        cursor: pointer;
+      }
+
+      @media (min-width: 1440px) {
+        div.wrap {
+          width: 450px;
+          height: 697px;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        p {
+          padding: 0 45px;
+          font-size: 16px;
+          line-height: 26px;
+        }
+        div.plan {
+          width: 354px;
+          height: 98px;
+          margin-top: 25px;
+          margin-bottom: 30px;
+          padding: 0 20px;
+        }
+        div.price {
+          width: 100px;
+          height: 60px;
+          font-size: 16px;
+          margin-bottom: -13px;
+        }
+        span.change {
+          margin-left: 95px;
+          font-size: 14px;
+        }
+        div.button {
+          margin-bottom: 30px;
+          width: 354px;
+        }
+        .attribution {
+          font-size: 14px;
+        }
+
+        html {
+          background-image: url(/order-summary-component-main/images/pattern-background-desktop.svg);
+          background-repeat: repeat-x;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <img
+        class="hero"
+        src="/order-summary-component-main/images/illustration-hero.svg"
+        alt=""
+      />
+
+      <h1>Order Summary</h1>
+      <p>
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
+      <div class="plan">
+        <img
+          class="icon"
+          src="/order-summary-component-main/images/icon-music.svg"
+          alt="icon music"
+        />
+        <div class="price">
+          <span class="annual">Annual Plan</span>
+          <span class="yearly">$59.99/year</span>
+        </div>
+        <span class="change">Change</span>
+      </div>
+      <div class="button">Proceed to Payment</div>
+      <span class="order">Cancel Order</span>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">PaanKrab</a>.
+    </div>
+  </body>
+</html>
